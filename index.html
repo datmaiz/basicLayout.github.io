@@ -4,356 +4,245 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bai12.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <title>Document</title>
-
-    <style>
-      * {
-        font-family: 'Poppins',sans-serif;
-      }
-      .header {
-        display: flex;
-        justify-content: space-between;
-      }
-      .header-logo {
-        margin: 0;
-      }
-      .header-logo img {
-        width: 100px;
-      }
-      .header-logo p {
-        color: blue;
-      }
-      .header-right-option ul {
-        display: flex;
-        list-style: none;
-        column-gap: 5px;
-      }
-      .header-right {
-        display: flex;
-        flex-direction: column;
-      }
-      .header-right hr {
-        margin: 0;
-      }
-      .header-right-search {
-        display: flex;
-        column-gap: 5px;
-      }
-      .header-right-search img {
-        width: 50px;
-      }
-      .header-right-search input {
-        border-radius: 3px;
-        border: 1px solid #ccc;
-        outline: none;
-      }
-      .header-right-search button {
-        border-radius: 3px;
-        outline: none;
-        border: 2px solid green;
-        background-color: white;
-        color: green;
-        padding: 0 20px;
-      }
-      a {
-        text-decoration: none;
-        color: #00aedd;
-      }
-      .nav {
-        background-color: #333;
-      }
-      .nav ul {
-        display: flex;
-        list-style: none;
-        column-gap: 10px;
-      }
-      .nav a {
-        color: white;
-        padding: 10px 0;
-        display: inline-block;
-      }
-      .nav hr {
-        margin: 0;
-      }
-      .nav ul {
-        padding-left: 10px;
-      }
-      main {
-        display: flex;
-        column-gap: 200px;
-      }
-      .main-title {
-        color: #00aedd;
-        margin: 0;
-      }
-      .news-items {
-        display: flex;
-        padding: 10px 0;
-      }
-      .main-news .news-items img {
-        width: 200px;
-        border-radius: 10px;
-      }
-      .news-detail {
-        padding: 0 10px;
-        cursor: pointer;
-      }
-      .news-detail-title {
-        color: blue;
-      }
-      .news-more-containers {
-        padding: 5px; 
-        background-color: #ccc;
-        display: flex;
-        justify-content: space-around;
-        border-radius: 5px;
-      }
-      .news-more {
-        display: block;
-        width: 70px;
-        height: 70px;
-        background-color: #444;
-        border-radius: 5px;
-      }
-      .main-title {
-        user-select: none;
-      }
-      .news-info ul {
-        list-style: none;
-        padding-left: 5px;
-      }
-      .news-info ul li:nth-child(3n + 1){
-        color: blue;
-      }
-      .main-list {
-        display: flex;
-        flex-direction: column;
-        width: 50%;
-      }
-      .main-list h4 {
-        margin: 0;
-        color: #00aedd;
-        user-select: none;
-      }
-      .main-list summary {
-        color: rgb(52, 52, 226);
-      }
-      .main-list hr {
-        margin: 10px 0;
-      }
-      .main-list-image ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        row-gap: 10px;
-      }
-      .main-list-image ul li {
-        padding: 20px 10px;
-        background-color: #464646;
-        display: block;
-        color: #ccc;
-        text-align: center;
-        border-radius: 5px;
-      }
-      summary {
-        user-select: none;
-      }
-      footer {
-        display: flex;
-        justify-content: space-between;
-      }
-      .footer-left-info {
-        font-weight: bold;
-      }
-      .footer-left-email {
-        color: #00aedd;
-        font-weight: bold;
-      }
-      .footer-left p {
-        margin: 0;
-      }
-      .footer-right ul {
-        list-style: none;
-        display: flex;
-        margin: auto 0;
-      }
-      .footer-right-list hr {
-        margin: 0;
-      }
-      .footer-right-list ul li {
-        padding: 0 10px;
-        color: #00aedd;
-      }
-      .footer-right-copyright {
-        padding-left: 40px;
-      }
-      hr.style {
-        border-style: dashed;
-      }
-    </style>
   </head>
   <body>
-    <div class="main">
-      <header class="header">
-        <div class="header-logo">
+    <nav class="sidebar__left">
+      <div class="list-product">
+        <div class="sidebar__left-container">
+          <i class="fa-solid fa-circle-play"></i>Danh mục sản phẩm
+        </div>
+        <ul>
+          <li>
+            <a href=""
+              ><i class="fa-solid fa-play"></i>Nội thất sofa phòng khách</a
+            >
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất phòng bếp</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất phòng trẻ em</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất phòng ngủ</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất tủ áo</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất kệ TV</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất giá sách</a>
+          </li>
+          <li>
+            <a href=""><i class="fa-solid fa-play"></i>Nội thất tủ hồ sơ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="list-access">
+        <div class="list-access__container">
+          <i class="fa-solid fa-circle-play"></i>
+          Thông tin truy cập
+        </div>
+        <div class="list-access-number">
+          <span class="list-access-number__items">0</span>
+          <span class="list-access-number__items">0</span>
+          <span class="list-access-number__items">0</span>
+          <span class="list-access-number__items">0</span>
+          <span class="list-access-number__items">3</span>
+          <span class="list-access-number__items">3</span>
+          <span class="list-access-number__items">7</span>
+          <span class="list-access-number__items">3</span>
+        </div>
+        <ul>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Hôm nay</span
+            >
+            <span class="list-access__number">3</span>
+          </li>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Hôm qua</span
+            >
+            <span class="list-access__number">3</span>
+          </li>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Tuần này</span
+            >
+            <span class="list-access__number">225</span>
+          </li>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Tuần trước</span
+            >
+            <span class="list-access__number">303</span>
+          </li>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Tháng này</span
+            >
+            <span class="list-access__number">749</span>
+          </li>
+          <li>
+            <span class="list-access__name"
+              ><i class="fa-solid fa-play"></i>Tháng trước</span
+            >
+            <span class="list-access__number">1110</span>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar__left-adverts">
+        <div class="advert-container">
+          <div><i class="fa-solid fa-circle-play"></i>Quảng cáo</div>
           <img
-            src="https://azco.vn/wp-content/uploads/2019/11/thumb-logo-la-gi.jpg"
+            src="data:image/png;base64,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"
             alt=""
           />
-          <p class="header-hotline">Hotline: tintuc@gmail.com</p>
         </div>
-        <div class="header-right">
-          <div class="header-right-option">
-            <ul>
-              <li><a href="">Tin tức online</a></li>
-              <hr />
-              <li><a href="">InfoNet</a></li>
-              <hr />
-              <li><a href="">IctNews</a></li>
-              <hr />
-              <li><a href="">Tuyển dụng</a></li>
-            </ul>
-          </div>
-          <div class="header-right-search">
-            <input type="text" />
-            <button>Search</button>
-            <img
-              src="https://media.istockphoto.com/id/1183802462/vi/vec-to/wifi-icon-n%C3%BAt-tr%C3%B2n-v%C3%A0ng-%C4%91%E1%BB%93ng-xu-s%C3%A1ng-b%C3%B3ng-khung-h%C3%ACnh-kh%C3%A1i-ni%E1%BB%87m-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-minh-h%E1%BB%8Da-tr%E1%BB%ABu.jpg?s=1024x1024&w=is&k=20&c=4dsKQGfQbxHr0U4TYG60Lwx0Ef6iEEg4X27M1q2ipFU="
-              alt=""
-            />
-            <img
-              src="data:image/png;base64,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"
-              alt=""
-            />
-          </div>
-        </div>
-      </header>
+      </div>
+    </nav>
 
-      <nav class="nav">
+    <main>
+      <nav class="navbar">
         <ul>
-          <li><a href="">Xã hội</a></li>
-          <hr />
-          <li><a href="">Giáo dục</a></li>
-          <hr />
-          <li><a href="">Kinh doanh</a></li>
-          <hr />
-          <li><a href="">Công nghệ</a></li>
-          <hr />
-          <li><a href="">Giải trí</a></li>
+          <li><a href="">Trang chủ</a></li>
+          <li><a href="">Giới thiệu</a></li>
+          <li><a href="">Sản phẩm</a></li>
+          <li><a href="">Bảo hành</a></li>
+          <li><a href="">Tư vấn</a></li>
+          <li><a href="">Khuyến mãi</a></li>
+          <li><a href="">Liên hệ</a></li>
         </ul>
       </nav>
-
-      <main>
-        <div class="main-news">
-          <h4 class="main-title">Tin mới nhất</h4>
-          <hr class="style">
-          <div class="news-items">
-            <img
-              src="data:image/png;base64,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"
-              alt=""
-            />
-            <div class="news-detail">
-              <p class="news-detail-title">Tiêu đề tin tức</p>
-              <p class="news-detail-text">
-                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
-                tin tức mới nhất
-                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
-                tin tức mới nhất
-                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
-                tin tức mới nhất
-              </p>
-            </div>
+      <div class="main">
+        <div class="main-image">
+          <img
+            src="https://file4.batdongsan.com.vn/crop/600x315/2020/10/24/20201024133441-d124_wm.jpg"
+            alt=""
+          />
+        </div>
+        <div class="main-product-list">
+          <div class="main-product-list-title">
+            <i class="fa-solid fa-circle-play"></i>Sản phẩm tiêu biểu
           </div>
-          <div class="news-more-containers">
-            <span class="news-more"></span>
-            <span class="news-more"></span>
-            <span class="news-more"></span>
-            <span class="news-more"></span>
-            <span class="news-more"></span>
-            <span class="news-more"></span>
-          </div>
-          <div class="news-info">
-            <ul>
-              <li>Loại tin tức</li>
-              <hr class="style" />
-              <li>07/05/2018</li>
-              <li>Tiêu đề theo loại tin tức</li>
-              <hr class="style" />
-              <li>12/06/2018</li>
-              <li>Tiêu đề theo loại tin tức</li>
-              <hr class="style" />
-              <li>20/09/2018</li>
-              <li>
-                Tiêu đề theo loại tin tức, tiêu đề theo loại tin tức. tiêu đề
-                theo loại tin tức
-              </li>
-              <hr class="style" />
-            </ul>
+          <div class="main-product-list-goods">
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <div>
+                  <img
+                    src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                    alt=""
+                  />
+                </div>
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <hr />
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <img
+                  src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                  alt=""
+                />
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <hr />
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <img
+                  src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                  alt=""
+                />
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <hr />
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <img
+                  src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                  alt=""
+                />
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <hr />
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <img
+                  src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                  alt=""
+                />
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <hr />
+            <span class="main-product-items">
+              <span class="main-product-items__content">
+                <h5 class="main-product-items__title">
+                  Nội thất giường ngủ 006
+                </h5>
+                <img
+                  src="https://file4.batdongsan.com.vn/resize/745x510/2020/10/24/20201024133501-effa_wm.jpg"
+                  alt=""
+                />
+                <span class="main-product-items-cost">7.000.000 VNĐ</span>
+                <span class="main-product-items-button">
+                  <button class="main-product-button__decs">Chi tiết</button>
+                  <button class="main-product-button__big">Ảnh lớn</button>
+                </span>
+              </span>
+            </span>
+            <span class="main-product-items"></span>
+            <span class="main-product-items"></span>
           </div>
         </div>
-        <div class="main-list">
-          <h4 class="main-list-title">Tin nóng</h4>
-          <hr class="style">
-          <div class="main-list-details">
-            <details>
-              <summary>Tin nóng 01</summary>
-            </details>
-            <details>
-              <summary>Tin nóng 02</summary>
-            </details>
-            <details>
-              <summary>Tin nóng 03</summary>
-            </details>
-            <details>
-              <summary>Tin nóng 04</summary>
-            </details>
-            <details>
-              <summary>Tin nóng 05</summary>
-            </details>
-            <details>
-              <summary>Tin nóng 06</summary>
-            </details>
-          </div>
-          <h4 class="main-list-title">Quảng cáo</h4>
-          <hr class="style" />
-          <div class="main-list-image">
-            <ul>
-              <li>Hình</li>
-              <li>Hình</li>
-              <li>Hình</li>
-            </ul>
-          </div>
-        </div>
-      </main>
-      <hr class="style"/>
-      <footer>
-        <div class="footer-left">
-          <p class="footer-left-info">Tên công ty</p>
-          <p class="footer-left-info">
-            Địa chỉ: 123abc, phường X, quận Y, Tp.Z
-          </p>
-          <p class="footer-left-info">Điện thoại: 0123456789</p>
-          <p class="footer-left-email">Email: tintuc@gmail.com</p>
-        </div>
-        <div class="footer-right">
-          <div class="footer-right-list">
-            <ul>
-              <li>Xã hội</li>
-              <hr />
-              <li>Giáo dục</li>
-              <hr />
-              <li>Kinh doanh</li>
-              <hr />
-              <li>Công nghệ</li>
-              <hr />
-              <li>Giải trí</li>
-            </ul>
-          </div>
-          <div class="footer-right-copyright">Copyright@2018Tên công ty</div>
-        </div>
-      </footer>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
