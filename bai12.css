@@ -1,0 +1,276 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    column-gap: 10px;
+}
+
+.sidebar__left {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.sidebar__left .list-product {
+    background-color: rgb(220, 152, 28);
+    border-radius: 5px;
+}
+
+.sidebar__left-container {
+    font-weight: 700;
+    color: white;
+    user-select: none;
+    background-color: rgb(105, 70, 5);
+    border-radius: 5px;
+}
+
+.sidebar__left-container i {
+    padding: 5px 10px;
+}
+
+.list-product ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding-left: 20px;
+}
+
+.list-product ul li {
+    font-weight: 500;
+    padding: 0 10px;
+}
+
+.list-product ul li i {
+    padding: 5px 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.list-access {
+    background-color: rgb(220, 152, 28);
+    border-radius: 5px;
+}
+
+.list-access__container {
+    font-weight: 700;
+    color: white;
+    user-select: none;
+    background-color: rgb(105, 70, 5);
+    border-radius: 5px;
+}
+
+.list-access__container i {
+    padding: 5px 10px;
+}
+
+.list-access ul li {
+    font-weight: 500;
+}
+
+.list-access ul i {
+    color: white;
+    font-size: 10px;
+    padding: 0 10px;
+}
+
+.list-access ul {
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.list-access ul li .list-access__number {
+    padding: 0 5px;
+}
+
+.list-access ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-access .list-access-number {
+    justify-content: center;
+    display: flex;
+}
+
+.list-access-number__items {
+    background-color: black;
+    border-radius: 2px;
+    color: #eee;
+    padding: 1px 2px;
+}
+
+.sidebar__left {
+    background-color: rgb(220, 152, 28);
+}
+
+.sidebar__left-adverts div div {
+    color: white;
+    background-color: rgb(105, 70, 5);
+    border-radius: 5px;
+}
+
+.sidebar__left-adverts div div i {
+    padding: 5px 10px;
+}
+
+.sidebar__left-adverts div div {
+    font-weight: 700;
+}
+
+.sidebar__left-adverts div img {
+    width: 100%;
+    padding-top: 5px;
+}
+
+.advert-container {
+    user-select: none;
+}
+
+main {
+    flex: 1;
+    border-radius: 10px;
+}
+
+main .navbar {
+    background-color: lightyellow;
+    border-radius: 5px;
+}
+
+main .navbar ul {
+    display: flex;
+    padding-left: 0;
+    justify-content: space-around;
+}
+
+main .navbar ul li {
+    padding: 10px 20px;
+    transition: .25s linear;
+    border-radius: 5px;
+}
+
+main .navbar ul li:hover {
+    background-color: lightgreen;
+}
+
+main .navbar ul li a {
+    font-weight: 500;
+}
+
+main div img {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.main-product-list-title i {
+    color: white;
+    padding: 5px 10px;
+}
+
+.main-product-list-goods {
+    display: flex;
+}
+
+.main-product-list-title {
+    font-weight: 600;
+    background-color: rgb(220, 152, 28);
+    padding: 10px;
+    user-select: none;
+}
+
+.main-product-items__title {
+    text-align: center;
+}
+
+.main-product-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.main-product-items__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-product-items__content img {
+    width: 60%;
+}
+
+.main-product-items__content div {
+    text-align: center;
+}
+
+.main-product-items-cost {
+    color: orange;
+}
+
+.main-product-items-button button {
+    flex: 1;
+    width: 100px;
+    padding: 5px 0;
+    outline: none;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.main-product-list-goods {
+    overflow-x: scroll;
+    width: 1050px;
+}
+
+.main-product-list-goods::-webkit-scrollbar {
+    height: 10px;
+}
+
+.main-product-list-goods::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to right, #C33764 , #1D2671);
+}
+
+.main-product-list-goods::-webkit-scrollbar-track {
+    background-color: #ccc;
+}
+
+.main-product-items-button {
+    display: flex;
+    column-gap: 5px;
+}
+
+.main-product-button__decs {
+    background-color: lightgoldenrodyellow;
+    border-color: lightgoldenrodyellow;
+}
+
+.main-product-button__big {
+    background-color: rgb(220, 152, 28);
+    border-color: rgb(220, 152, 28);
+}
+
+hr {
+    border-color: green;
+    background-color: green;
+    width: 2px;
+}
+
+button {
+    box-shadow: 2px 2px 5px 2px grey;
+}

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        font-family: 'Poppins',sans-serif;
+      }
+      .header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .header-logo {
+        margin: 0;
+      }
+      .header-logo img {
+        width: 100px;
+      }
+      .header-logo p {
+        color: blue;
+      }
+      .header-right-option ul {
+        display: flex;
+        list-style: none;
+        column-gap: 5px;
+      }
+      .header-right {
+        display: flex;
+        flex-direction: column;
+      }
+      .header-right hr {
+        margin: 0;
+      }
+      .header-right-search {
+        display: flex;
+        column-gap: 5px;
+      }
+      .header-right-search img {
+        width: 50px;
+      }
+      .header-right-search input {
+        border-radius: 3px;
+        border: 1px solid #ccc;
+        outline: none;
+      }
+      .header-right-search button {
+        border-radius: 3px;
+        outline: none;
+        border: 2px solid green;
+        background-color: white;
+        color: green;
+        padding: 0 20px;
+      }
+      a {
+        text-decoration: none;
+        color: #00aedd;
+      }
+      .nav {
+        background-color: #333;
+      }
+      .nav ul {
+        display: flex;
+        list-style: none;
+        column-gap: 10px;
+      }
+      .nav a {
+        color: white;
+        padding: 10px 0;
+        display: inline-block;
+      }
+      .nav hr {
+        margin: 0;
+      }
+      .nav ul {
+        padding-left: 10px;
+      }
+      main {
+        display: flex;
+        column-gap: 200px;
+      }
+      .main-title {
+        color: #00aedd;
+        margin: 0;
+      }
+      .news-items {
+        display: flex;
+        padding: 10px 0;
+      }
+      .main-news .news-items img {
+        width: 200px;
+        border-radius: 10px;
+      }
+      .news-detail {
+        padding: 0 10px;
+        cursor: pointer;
+      }
+      .news-detail-title {
+        color: blue;
+      }
+      .news-more-containers {
+        padding: 5px; 
+        background-color: #ccc;
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5px;
+      }
+      .news-more {
+        display: block;
+        width: 70px;
+        height: 70px;
+        background-color: #444;
+        border-radius: 5px;
+      }
+      .main-title {
+        user-select: none;
+      }
+      .news-info ul {
+        list-style: none;
+        padding-left: 5px;
+      }
+      .news-info ul li:nth-child(3n + 1){
+        color: blue;
+      }
+      .main-list {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+      .main-list h4 {
+        margin: 0;
+        color: #00aedd;
+        user-select: none;
+      }
+      .main-list summary {
+        color: rgb(52, 52, 226);
+      }
+      .main-list hr {
+        margin: 10px 0;
+      }
+      .main-list-image ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
+      .main-list-image ul li {
+        padding: 20px 10px;
+        background-color: #464646;
+        display: block;
+        color: #ccc;
+        text-align: center;
+        border-radius: 5px;
+      }
+      summary {
+        user-select: none;
+      }
+      footer {
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer-left-info {
+        font-weight: bold;
+      }
+      .footer-left-email {
+        color: #00aedd;
+        font-weight: bold;
+      }
+      .footer-left p {
+        margin: 0;
+      }
+      .footer-right ul {
+        list-style: none;
+        display: flex;
+        margin: auto 0;
+      }
+      .footer-right-list hr {
+        margin: 0;
+      }
+      .footer-right-list ul li {
+        padding: 0 10px;
+        color: #00aedd;
+      }
+      .footer-right-copyright {
+        padding-left: 40px;
+      }
+      hr.style {
+        border-style: dashed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <header class="header">
+        <div class="header-logo">
+          <img
+            src="https://azco.vn/wp-content/uploads/2019/11/thumb-logo-la-gi.jpg"
+            alt=""
+          />
+          <p class="header-hotline">Hotline: tintuc@gmail.com</p>
+        </div>
+        <div class="header-right">
+          <div class="header-right-option">
+            <ul>
+              <li><a href="">Tin tức online</a></li>
+              <hr />
+              <li><a href="">InfoNet</a></li>
+              <hr />
+              <li><a href="">IctNews</a></li>
+              <hr />
+              <li><a href="">Tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="header-right-search">
+            <input type="text" />
+            <button>Search</button>
+            <img
+              src="https://media.istockphoto.com/id/1183802462/vi/vec-to/wifi-icon-n%C3%BAt-tr%C3%B2n-v%C3%A0ng-%C4%91%E1%BB%93ng-xu-s%C3%A1ng-b%C3%B3ng-khung-h%C3%ACnh-kh%C3%A1i-ni%E1%BB%87m-tr%E1%BB%ABu-t%C6%B0%E1%BB%A3ng-minh-h%E1%BB%8Da-tr%E1%BB%ABu.jpg?s=1024x1024&w=is&k=20&c=4dsKQGfQbxHr0U4TYG60Lwx0Ef6iEEg4X27M1q2ipFU="
+              alt=""
+            />
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+          </div>
+        </div>
+      </header>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="">Xã hội</a></li>
+          <hr />
+          <li><a href="">Giáo dục</a></li>
+          <hr />
+          <li><a href="">Kinh doanh</a></li>
+          <hr />
+          <li><a href="">Công nghệ</a></li>
+          <hr />
+          <li><a href="">Giải trí</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="main-news">
+          <h4 class="main-title">Tin mới nhất</h4>
+          <hr class="style">
+          <div class="news-items">
+            <img
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <div class="news-detail">
+              <p class="news-detail-title">Tiêu đề tin tức</p>
+              <p class="news-detail-text">
+                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
+                tin tức mới nhất
+                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
+                tin tức mới nhất
+                Nội dung tin tức mới nhất. Nội dung tin tức mới nhất. Nội dung
+                tin tức mới nhất
+              </p>
+            </div>
+          </div>
+          <div class="news-more-containers">
+            <span class="news-more"></span>
+            <span class="news-more"></span>
+            <span class="news-more"></span>
+            <span class="news-more"></span>
+            <span class="news-more"></span>
+            <span class="news-more"></span>
+          </div>
+          <div class="news-info">
+            <ul>
+              <li>Loại tin tức</li>
+              <hr class="style" />
+              <li>07/05/2018</li>
+              <li>Tiêu đề theo loại tin tức</li>
+              <hr class="style" />
+              <li>12/06/2018</li>
+              <li>Tiêu đề theo loại tin tức</li>
+              <hr class="style" />
+              <li>20/09/2018</li>
+              <li>
+                Tiêu đề theo loại tin tức, tiêu đề theo loại tin tức. tiêu đề
+                theo loại tin tức
+              </li>
+              <hr class="style" />
+            </ul>
+          </div>
+        </div>
+        <div class="main-list">
+          <h4 class="main-list-title">Tin nóng</h4>
+          <hr class="style">
+          <div class="main-list-details">
+            <details>
+              <summary>Tin nóng 01</summary>
+            </details>
+            <details>
+              <summary>Tin nóng 02</summary>
+            </details>
+            <details>
+              <summary>Tin nóng 03</summary>
+            </details>
+            <details>
+              <summary>Tin nóng 04</summary>
+            </details>
+            <details>
+              <summary>Tin nóng 05</summary>
+            </details>
+            <details>
+              <summary>Tin nóng 06</summary>
+            </details>
+          </div>
+          <h4 class="main-list-title">Quảng cáo</h4>
+          <hr class="style" />
+          <div class="main-list-image">
+            <ul>
+              <li>Hình</li>
+              <li>Hình</li>
+              <li>Hình</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+      <hr class="style"/>
+      <footer>
+        <div class="footer-left">
+          <p class="footer-left-info">Tên công ty</p>
+          <p class="footer-left-info">
+            Địa chỉ: 123abc, phường X, quận Y, Tp.Z
+          </p>
+          <p class="footer-left-info">Điện thoại: 0123456789</p>
+          <p class="footer-left-email">Email: tintuc@gmail.com</p>
+        </div>
+        <div class="footer-right">
+          <div class="footer-right-list">
+            <ul>
+              <li>Xã hội</li>
+              <hr />
+              <li>Giáo dục</li>
+              <hr />
+              <li>Kinh doanh</li>
+              <hr />
+              <li>Công nghệ</li>
+              <hr />
+              <li>Giải trí</li>
+            </ul>
+          </div>
+          <div class="footer-right-copyright">Copyright@2018Tên công ty</div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
