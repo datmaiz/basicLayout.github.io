@@ -17,6 +17,20 @@ body {
     column-gap: 10px;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 100rem;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #ccc;
+    border-radius: 99rem2;
+}
+
 .sidebar__left {
     display: flex;
     flex-direction: column;
@@ -244,10 +258,12 @@ main div img {
 
 .main-product-list-goods::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to right, #C33764 , #1D2671);
+    border-radius: 100rem;
 }
 
 .main-product-list-goods::-webkit-scrollbar-track {
     background-color: #ccc;
+    border-radius: 100rem;
 }
 
 .main-product-items-button {
@@ -268,7 +284,9 @@ main div img {
 hr {
     border-color: green;
     background-color: green;
-    width: 2px;
+    padding: 1px;
+    width: 1px;
+    border-radius: 100rem;
 }
 
 button {
